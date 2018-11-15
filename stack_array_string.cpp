@@ -20,8 +20,10 @@ int main()
                     cout<<"\n Stack overflow!!!";
                 }
                 else
-                {
-                    top=push(arrstring,top);
+                {    char ch;
+                    cout<<"\n Enter the element to be pushed to stack:";
+                    cin>>ch;
+                    top=push(arrstring,top,ch);
                 }
 				break;
 				}
@@ -32,7 +34,10 @@ int main()
                     }
                     else
                     {
-                        top=pop(arrstring,top);
+                        char popped;
+                        popped=pop(arrstring,top);
+                        cout<<"\n The element popped is:"<<popped;
+                        top--;
                     }
                     break;
                 }
