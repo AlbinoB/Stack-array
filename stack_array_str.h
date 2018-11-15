@@ -1,17 +1,13 @@
-int push(char *arrstring,int top)//pass the address of the string array,top index of the stack
+int push(char *arrstring,int top,char ch)//pass the address of the string array,top index of the stack
 	{
-	    char ch;
-	    cout<<"\n Enter the element to be pushed to stack:";
-        cin>>ch;
         arrstring[++top]=ch;
         return top;
 	}
 
 
-int pop(char *arrstring,int top)//pass the address of the string array,top index of the stack
+char pop(char *arrstring,int top)//pass the address of the string array,top index of the stack
 {
-    cout<<"\n The element popped is:"<<arrstring[top--];
-    return top;
+    return arrstring[top--];
 }
 
 
