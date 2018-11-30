@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 int push(char *arrstring,int top,char ch)//pass the address of the string array,top index of the stack
 	{
         arrstring[++top]=ch;
